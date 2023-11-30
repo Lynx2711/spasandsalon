@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Play&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      html {
+        font-size: 10px;
+      }
+      
+      body {
+        font-family: "Poppins", sans-serif;
+        background: url("https://www.sportanlagenchur.ch/sites/sportanlagenchur/files/styles/hero_large/public/2021-08/wellness_obereau_massage_adobestock_3_0.jpeg?h=5dc6a69c&itok=PbJW444m"),no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      h1{
+        font-family: "Ephesis";
+        word-spacing: 10px;
+        color: #fff;
+      }
+      label{
+        font-size: x-small;
+        color: #fff;
+      }
+      #wrapper {
+        text-align: center;
+        margin-top: 10vh;
+      }
+      .container {
+        display: inline-block;
+        
+        padding: 6vw 7vw 8vw 7vw;
+        
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius: 20px;
+    backdrop-filter: blur(2px);
+      }
+      @media (max-width: 460px) {
+        #wrapper {
+          margin: 12vh 0 15vh 0;
+        }
+      }
+      #appoint-form {
+        text-align: justify;
+      }
+      #form-head {
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+      }
+      @media (max-width: 460px) {
+        #form-head {
+          font-size: 3rem;
+          text-align: center;
+        }
+      }
+      #city {
+        display: block;
+      }
+      .format {
+        padding-top: 2vw;
+        font-size: 3rem;
+      }
+      /*#dropdown {
+        width: 95%;
+        height: 35px;
+        font-size: 1.8rem;
+        padding-left: 8px;
+        margin-top: 5px;
+        font-family: "Poppins", sans-serif;
+        background-color: #eee;
+      }*/
+      #date-time {
+        display: block;
+        line-height: 2.5rem;
+      }
+      #date {
+      }
+      .dtt,
+      .person-detail {
+        height: 35px;
+        font-size: 1.8rem;
+        padding-left: 8px;
+        margin-top: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+      .dtt {
+        width: 46.5%;
+        background-color: #eee;
+        margin-top: 1.5vw;
+      }
+      #time {
+        margin-left: 8px;
+      }
+      #note {
+        display: block;
+        font-size: 15px;
+        padding-top: 3px;
+      }
+      
+      #name {
+        margin-top: 0px;
+      }
+      .person-detail {
+        display: block;
+        width: 95%;
+        margin: 12px 0 12px 0;
+        border: 1.5px solid #aaa;
+      }
+      #mobile {
+      }
+      #email {
+      }
+      #message {
+        height: 80px;
+        padding-top: 3px;
+      }
+      textarea {
+        resize: none;
+      }
+      #submit {
+        display: block;
+        border-radius: 3px;
+        width: 96%;
+        color: #fff;
+        height: 48px;
+        font-size: 2rem;
+        background: transparent ;
+        margin-top: 20px;
+        border-style: none;
+        font-family: "Poppins", sans-serif;
+        opacity: 1;
+        transition: 0.3s;
+      }
+      input:focus,
+      #dropdown:focus,
+      #time:focus {
+        border-color: #e6e1e1;
+        outline: none;
+        box-shadow: 1px 1px 0px rgb(195, 195, 198);
+      }
+      #submit:hover {
+        border-radius: 5px;
+        opacity: 0.5;
+      }
+      @media (max-width: 460px) {
+        .format {
+          font-size: 2.2rem;
+          padding-top: 5vw;
+        }
+        #p-details {
+          padding-top: 50px;
+        }
+        .dtt {
+          width: 45.8%;
+        }
+        .container {
+          padding: 6vw 4vw 8vw 8vw;
+        }
+      }
+      </style>
+      
+</head>
+<body>
+  <section>
+    <main id="wrapper">
+        <div class="container">
+          <form action="#" id="appoint-form" method="POST">
+            <h1 id="form-head" style="word-spacing: 20px;">Book Your  Appointment</h1>
+            
+            <label for="dateandtime" id="date-time" class="format">SELECT DATE AND TIME </label>
+            <input type="date" id="date" name="date" class="dtt"  required>
+            <input type="time" id="time" name="utime" min="8:00" max="20:00" value="8:00" class="dtt" required>
+            <small id="note">(Note:Visiting hours are 8am to 8pm)</small>
+            <label for="personal details" id="p-details" class="format">PERSONAL DETAILS</label>
+            <input type="text" id="name" class="person-detail" placeholder="Full name*" name="uname" maxlength="20" required>
+            <input type="tel" id="mobile" class="person-detail" name="ucontact" placeholder="Mobile number*" maxlength="10" required>
+            <input type="email" placeholder="Email(optional)" id="email" class="person-detail" name="uemail" required>
+            <textarea id="message" name="umessage" rows="5" cols="3" placeholder="Type text message" class="person-detail"></textarea>
+            <button type="submit" id="submit" value="Submit" onclick="">Submit </button>
+      
+          </form>
+        </div>
+      </main>
+  </section>
+</body>
+</html>
