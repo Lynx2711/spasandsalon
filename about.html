@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        html{
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+        .column{
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin: 8px;
+        }
+        .about-us{
+            padding: 50px;
+            text-align: center;
+            background-color: #d2a679;
+            color: white;
+        }
+        .container{
+            padding: 0 16px;
+        }
+        .container::after, .row::after{
+            content: "";
+            clear: both;
+            display: table;
+            
+        }
+        .item{
+            display: flex;
+            /*text-align: right;*/
+            font-size: x-small;
+            justify-content: space-between;
+        }
+        .options{
+            /*text-align: left;*/
+            font-size: x-small;
+            padding-left: 30px;
+            
+            
+        }
+        .price{
+            text-align: right;
+            font-size: x-small;
+            
+            float: right;
+            
+        }
+        .options .price{
+            margin: 1rem;
+        }
+        .title{
+            color: #a5886a;
+        }
+        .images{
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+        button{
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover{
+            background-color: rgb(200, 175, 138);
+        }
+        @media screen and(max-width: 650px) {
+            .column{
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <div class="about-us">
+        <h1>About Us</h1>
+        <p>Proffesional service experience in one of the leading unisex salon and spa</p>
+        <p>With an unmatched set up and support system, we here at serenity salon strive to provide the best we can offer! Continuous innovation of the service offering and meticulous focus on salon experience has lead us to enjoying a large and loyal customer base of over 20 lac customers which is ever growing.
+
+        </p>
+    </div>
+
+    <h2 style="text-align: center">Our Services-Men</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://i.pinimg.com/474x/ef/be/c0/efbec04bf20bf86205252b29a9c64398.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Hair spa and treatment</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    <article class="item"><h3 class="options">Hair Spa</h3><h3 class="price">Rs.599</h3></article>
+                    
+                    <article class="item"><h3 class="options">Head Massage Oil Nourisher</h3><h3 class="price">Rs.365</h3></article>
+                    
+                    <article class="item"><h3 class="options">Keratin Protect Treatment</h3><h3 class="price">Rs.1100</h3></article>
+                    
+                    <article class="item"><h3 class="options">Anti-Dandruff Treatment</h3><h3 class="price">Rs.1170</h3></article>
+                    
+                    <article class="item"><h3 class="options">Express Conditioning Hair Spa</h3><h3 class="price">Rs.700</h3></article>
+                    
+                        <article class="item"><h3 class="options">Moroccan oil Scalp Treatment</h3><h3 class="price">Rs.2100</h3></article>
+                    
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://i.pinimg.com/474x/c4/15/3e/c4153e82c2aa22d6f56be2d99890bbb8.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Skin Care</h2>
+                    <p class="title">From Serenity</p>
+                    <!--<p> Service Price List</p>-->
+                    
+                    <article class="item"><h3 class="options">Detan-Face</h3><h3 class="price">Rs.315</h3></article>
+                    
+                    <article class="item"><h3 class="options">Vita-C Glow Facial</h3><h3 class="price">Rs.1375</h3></article>
+                    
+                    <article class="item"><h3 class="options">Clean-Up Herbal</h3><h3 class="price">Rs.655</h3></article>
+                    
+                    <article class="item"><h3 class="options">Fair Bloom Facial</h3><h3 class="price">Rs.1980</h3></article>
+                    
+                    <article class="item"><h3 class="options">Platinum Glow Facial</h3><h3 class="price">Rs.2100</h3></article>
+
+                    <article class="item"><h3 class="options">Oxygen Facial-With Eye Treatment</h3><h3 class="price">Rs.4095</h3></article>
+                    
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://i.pinimg.com/474x/40/bf/38/40bf38d67c874618a64bec0669f17314.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Body Care</h2>
+                    <p class="title">From Serenity</p>
+                    <!--<p>Hair Spa and Treatment Service Price List</p>-->
+                    
+                    <article class="item"><h3 class="options">Regular Manicure</h3><h3 class="price">Rs.365</h3></article>
+
+                    <article class="item"><h3 class="options">Regular Pedicure</h3><h3 class="price">Rs.525</h3></article>
+                    
+                    <article class="item"><h3 class="options">Paraffin Manicure</h3><h3 class="price">Rs.495</h3></article>
+                    
+                    <article class="item"><h3 class="options">Heel Peel Treatment</h3><h3 class="price">Rs.2140</h3></article>
+                    
+                    <article class="item"><h3 class="options">Chocolate Foot Spa</h3><h3 class="price">Rs.750</h3></article>
+                    
+                    <article class="item"><h3 class="options">Crystal Crush Pedicure</h3><h3 class="price">Rs.795</h3></article>
+
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+
+                    
+                    
+                        
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://i.pinimg.com/474x/ef/be/c0/efbec04bf20bf86205252b29a9c64398.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Haircut and Styling</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    <article class="item"><h3 class="options">Hair cut-Basic</h3><h3 class="price">Rs.215</h3></article>
+                    
+                    <article class="item"><h3 class="options">Beard trim</h3><h3 class="price">Rs.185</h3></article>
+                    
+                    <article class="item"><h3 class="options">Beard Styling</h3><h3 class="price">Rs.220</h3></article>
+                    
+                        <article class="item"><h3 class="options">Hair cut-Advanced</h3><h3 class="price">Rs.355</h3></article>
+                    
+                        <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://im.hunt.in/local/Gallery/2997801/l/2997801_e593d.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Hair coloring</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    
+                    <article class="item"><h3 class="options">Beard Coloring</h3><h3 class="price">Rs.290</h3></article>
+                    
+                    <article class="item"><h3 class="options">Premium hair coloring(ammonia free)</h3><h3 class="price">Rs.1185</h3></article>
+                    
+                    <article class="item"><h3 class="options">Advanced Streaks</h3><h3 class="price">Rs.315</h3></article>
+                    
+                        <article class="item"><h3 class="options">Pro10 Coloring</h3><h3 class="price">Rs.585</h3></article>
+                    
+                        <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://content.jdmagicbox.com/comp/baramati/v1/9999p2112.2112.190715102954.h2v1/catalogue/mens-parlor-and-hair-spa-baramati-city-baramati-salons-jp70xm1aop-250.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Signature Services</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    
+                    <article class="item"><h3 class="options">Express Glow Service</h3><h3 class="price">Rs.599</h3></article>
+                    
+                    <article class="item"><h3 class="options">Active-Charcoal Services</h3><h3 class="price">Rs.1170</h3></article>
+                    
+                    <article class="item"><h3 class="options">Express Conditioning Hair Spa</h3><h3 class="price">Rs.700</h3></article>
+                    
+                        <article class="item"><h3 class="options">Makeup-SR Artist</h3><h3 class="price">Rs.2100</h3></article>
+                    
+                        <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+    <h2 style="text-align: center">Our Services-Women</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://media.istockphoto.com/id/851007946/photo/woman-getting-hair-shampooed-at-salon.webp?b=1&s=170667a&w=0&k=20&c=1869mjAAf8EMPjTR0mOjIBBI-iVxbK4jw8mNHUEy5KE=" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Hair spa and treatment</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    <article class="item"><h3 class="options">Hair Spa</h3><h3 class="price">Rs.450</h3></article>
+                    
+                    <article class="item"><h3 class="options">Head Massage Oil Nourisher</h3><h3 class="price">Rs.460</h3></article>
+                    
+                    <article class="item"><h3 class="options">Keratin Protect Treatment</h3><h3 class="price">Rs.1700</h3></article>
+                    
+                    <article class="item"><h3 class="options">Anti-Dandruff Treatment</h3><h3 class="price">Rs.1170</h3></article>
+                    
+                    <article class="item"><h3 class="options">Express Conditioning Hair Spa</h3><h3 class="price">Rs.700</h3></article>
+                    
+                    <article class="item"><h3 class="options">Anti-Hairfall Treatment</h3><h3 class="price">Rs.2700</h3></article>
+                    
+                    <article class="item"><h3 class="options">Moroccan oil Scalp Treatment</h3><h3 class="price">Rs.2100</h3></article>
+                    
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://img.freepik.com/free-photo/ai-generated-cute-girl-pic_23-2150649878.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Skin Care</h2>
+                    <p class="title">From Serenity</p>
+                    <!--<p> Service Price List</p>-->
+                    
+                    <article class="item"><h3 class="options">Detan-Face</h3><h3 class="price">Rs.315</h3></article>
+                    
+                    <article class="item"><h3 class="options">Vita-C Glow Facial</h3><h3 class="price">Rs.1375</h3></article>
+                    
+                    <article class="item"><h3 class="options">Clean-Up Herbal</h3><h3 class="price">Rs.655</h3></article>
+                    
+                    <article class="item"><h3 class="options">Fair Bloom Facial</h3><h3 class="price">Rs.1980</h3></article>
+                    
+                    <article class="item"><h3 class="options">Platinum Glow Facial</h3><h3 class="price">Rs.2100</h3></article>
+
+                    <article class="item"><h3 class="options">Oxygen Facial-With Eye Treatment</h3><h3 class="price">Rs.4095</h3></article>
+                    
+                    <article class="item"><h3 class="options">Flawless Bridal Glow Facial</h3><h3 class="price">Rs.3499</h3></article>
+                    
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOAVTuoDUncXwJsUfRWtixtXwX82lZqMsSA&usqp=CAU" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Body Care</h2>
+                    <p class="title">From Serenity</p>
+                    <!--<p>Hair Spa and Treatment Service Price List</p>-->
+                    
+                    <article class="item"><h3 class="options">Regular Manicure</h3><h3 class="price">Rs.365</h3></article>
+                    
+                    <article class="item"><h3 class="options">French Manicure</h3><h3 class="price">Rs.440</h3></article>
+                    
+                    <article class="item"><h3 class="options">Ice-Cream Manicure</h3><h3 class="price">Rs.1120</h3></article>
+
+                    <article class="item"><h3 class="options">Regular Pedicure</h3><h3 class="price">Rs.525</h3></article>
+                    
+                    <article class="item"><h3 class="options">Paraffin Manicure</h3><h3 class="price">Rs.495</h3></article>
+                    
+                    <article class="item"><h3 class="options">Heel Peel Treatment</h3><h3 class="price">Rs.2140</h3></article>
+                    
+                    <article class="item"><h3 class="options">Chocolate Foot Spa</h3><h3 class="price">Rs.750</h3></article>
+                    
+                    <article class="item"><h3 class="options">Crystal Crush Pedicure</h3><h3 class="price">Rs.795</h3></article>
+
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                    
+                        
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://media.istockphoto.com/id/1322686195/photo/beautiful-looking-young-blonde-woman-with-the-middle-length-hair-wearing-in-a-delicate-makeup.webp?b=1&s=170667a&w=0&k=20&c=pvSTlrQCicJS7Vsv871uUlFlvJGUfD2jsjocaeZwPQU=" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Haircut and Styling</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    <article class="item"><h3 class="options">Hair cut-Basic</h3><h3 class="price">Rs.215</h3></article>
+                    
+                    <article class="item"><h3 class="options">Trendy Kiddy Cut</h3><h3 class="price">Rs.115</h3></article>
+                    
+                    <article class="item"><h3 class="options">Hair cut-Advanced</h3><h3 class="price">Rs.315</h3></article>
+                    
+                    <article class="item"><h3 class="options">Shampoo and Conditioning</h3><h3 class="price">Rs.270</h3></article>
+                    
+                    <article class="item"><h3 class="options">Ironing</h3><h3 class="price">Rs.870</h3></article>
+                    
+                    <article class="item"><h3 class="options">Hair cut-Advanced</h3><h3 class="price">Rs.355</h3></article>
+                    
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkohlnELC9VTAdi2yFlBsT8lAo1BUd15cRyw&usqp=CAU" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Hair coloring</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    
+                    <article class="item"><h3 class="options">Creative Coloring</h3><h3 class="price">Rs.5290</h3></article>
+                    
+                    <article class="item"><h3 class="options">Premium hair coloring(ammonia free)</h3><h3 class="price">Rs.1185</h3></article>
+                    
+                    <article class="item"><h3 class="options">Advanced Streaks</h3><h3 class="price">Rs.315</h3></article>
+                    
+                    <article class="item"><h3 class="options">Global Coloring</h3><h3 class="price">Rs.2315</h3></article>
+                    
+                    <article class="item"><h3 class="options">Root Touch Up</h3><h3 class="price">Rs.805</h3></article>
+                    
+                    <article class="item"><h3 class="options">Pro10 Coloring</h3><h3 class="price">Rs.585</h3></article>
+                    
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="images" src="https://img.freepik.com/free-photo/young-woman-mask-face-relaxing-spa-salon_176420-7582.jpg" alt="treatment" style="width:100%">
+                <div class="container">
+                    <h2>Signature Services</h2>
+                    <p class="title">From Serenity</p>
+                    
+                    
+                    <article class="item"><h3 class="options">Express Glow Service</h3><h3 class="price">Rs.599</h3></article>
+                    
+                    <article class="item"><h3 class="options">Keratin Hair Taming System</h3><h3 class="price">Rs.6599</h3></article>
+                    
+                    <article class="item"><h3 class="options">Partial Highlights</h3><h3 class="price">Rs.3600</h3></article>
+                    
+                    <article class="item"><h3 class="options">Active-Charcoal Services</h3><h3 class="price">Rs.1170</h3></article>
+                    
+                    <article class="item"><h3 class="options">Express Conditioning Hair Spa</h3><h3 class="price">Rs.700</h3></article>
+                    
+                    <article class="item"><h3 class="options">Makeup-SR Artist</h3><h3 class="price">Rs.2100</h3></article>
+                    
+                    <p><a href="/appointment_page.html"><button >Book Appointment</button></a></p>
+                </div> 
+            </div>
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>
